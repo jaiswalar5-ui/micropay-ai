@@ -1,0 +1,32 @@
+{
+  "name": "micropay-ai-backend",
+  "version": "1.0.0",
+  "description": "MicroPay AI - x402 Payment-Gated AI Microservices Backend",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "test": "node --test dist/test/api.test.js"
+  },
+  "keywords": ["x402", "http-402", "ai", "micropayments", "base-sepolia", "usdc", "gemini"],
+  "author": "MicroPay AI Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/genai": "^0.1.2",
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/express": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "viem": "^2.23.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}
